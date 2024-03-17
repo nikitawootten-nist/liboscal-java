@@ -115,7 +115,8 @@ public class ProfileResolver {
   private DynamicContext dynamicContext;
 
   /**
-   * Gets the configured loader or creates a new default loader if no loader was configured.
+   * Gets the configured loader or creates a new default loader if no loader was
+   * configured.
    *
    * @return the bound loader
    */
@@ -340,7 +341,8 @@ public class ProfileResolver {
       IDocumentNodeItem document = getDynamicContext().getDocumentLoader().loadAsNodeItem(source);
       IDocumentNodeItem importedCatalog = resolve(document, importHistory);
 
-      // Create a defensive deep copy of the document and associated values, since we will be making
+      // Create a defensive deep copy of the document and associated values, since we
+      // will be making
       // changes to the data.
       try {
         importedCatalog = DefaultNodeItemFactory.instance().newDocumentNodeItem(
@@ -464,14 +466,17 @@ public class ProfileResolver {
 
     // {
     // // rebuild an index
-    // IDocumentNodeItem resolvedCatalogItem = DefaultNodeItemFactory.instance().newDocumentNodeItem(
+    // IDocumentNodeItem resolvedCatalogItem =
+    // DefaultNodeItemFactory.instance().newDocumentNodeItem(
     // new RootAssemblyDefinition(
     // ObjectUtils.notNull(
-    // (IAssemblyClassBinding) OscalBindingContext.instance().getClassBinding(Catalog.class))),
+    // (IAssemblyClassBinding)
+    // OscalBindingContext.instance().getClassBinding(Catalog.class))),
     // resolvedCatalog,
     // profileDocument.getBaseUri());
     //
-    // // FIXME: need to find a better way to create an index that doesn't auto select groups
+    // // FIXME: need to find a better way to create an index that doesn't auto
+    // select groups
     // IIndexer indexer = new BasicIndexer();
     // ControlSelectionVisitor selectionVisitor
     // = new ControlSelectionVisitor(IControlFilter.ALWAYS_MATCH, indexer);
